@@ -1,0 +1,33 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+</head>
+<body>
+<div class="bg">
+  <img src="img/bg.jpg" class="background">
+  <img src="img/zurichlogo.png" class="logo">
+  <form class="form" id="invertion_form">
+    <label>¿Cuáles de las siguientes afirmaciones lo representa mejor?</label>
+    <select required id="risk_type">
+      <option value="" disabled selected>Selecciona una opción</option>
+      <option value="alto">Espero que mi inversión obtenga rentabilidades mayores en el largo plazo, asumiendo mayores riesgos. </option>
+      <option value="moderado">Acepto fluctuaciones moderadas de rentabilidad, asumiendo un riesgo medio. </option>
+      <option value="bajo">Aspiro a acumular rentabilidades menores en el largo plazo, pero evitar mayores riesgos.</option>
+    </select>
+    <label>Indique el tiempo durante el cual usted estima que mantendrá su ahorro/inversión.</label>
+    <select required id="invertion_time">
+      <option value="" disabled selected>Selecciona una opción</option>
+      <option value="corto">Corto Plazo (Menos de 1 año) </option>
+      <option value="medio">Mediano Plazo (Entre 1 y 3 años) </option>
+      <option value="largo">Largo Plazo (Más de 3 años)</option>
+    </select>
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+<script src="js.js"></script>
+</body>
+
+
+</html>

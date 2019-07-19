@@ -1,0 +1,90 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg{
+  background: #ffffff;
+  width: 40%;
+  height: 300px;
+  float: left;
+  display: block;
+  margin: 0 30%;
+  margin-top: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.bg .background{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.bg .logo{
+  width: 15%;
+  float: left;
+  margin-bottom: 50px;
+}
+label{
+  width: 100%;
+  float: left;
+}
+select{
+  width: 90%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: solid 1px #cccccc;
+}
+
+input{
+  float: right;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: solid 1px #ffffff;
+  outline: none;
+  background: #4066b3;
+  color: #ffffff;
+  /* padding: 5px 10px; */
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 200ms;
+
+}
+
+input:hover{
+  border: solid 1px #4066b3;
+  background: #ffffff;
+  color: #4066b3;
+}
+
+@media (max-width:668px) {
+  .bg .background {
+    width: auto;
+    height:100vh;
+  }
+  .bg{
+    background: #ffffff;
+    width: 70%;
+    height: auto;
+    float: left;
+    display: block;
+    margin: 0 15%;
+    margin-top: 100px;
+  }
+  .logo{
+    margin:10px 40% 30px!important;
+    margin-bottom: 30px!important;
+    width: 20%!important;
+    float: inherit!important;
+    display: inline-block!important;
+  }
+}
